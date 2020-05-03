@@ -3,9 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 # C extensions
 *.so
-
+*.weights
 # Distribution / packaging
 .Python
 build/
