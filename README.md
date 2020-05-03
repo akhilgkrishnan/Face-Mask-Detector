@@ -19,6 +19,9 @@ This is a YOLO based deeplearning project for identifying wheather a person wear
 3. To run the application
 `python maskdetect.py`
 
+## Project Status
+Not completed
+
 
 
 
