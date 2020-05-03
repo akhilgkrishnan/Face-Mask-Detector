@@ -17,7 +17,6 @@ This is a YOLO based deeplearning project for identifying wheather a person wear
 `pip install -r requirements.txt`
 
 3. To run the application
-
 `python maskdetect.py`
 
 
