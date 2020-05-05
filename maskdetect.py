@@ -6,7 +6,7 @@ import cv2
 import os
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-y", "--yolo", required=True, default="./yolo",
+ap.add_argument("-y", "--yolo",default="./yolo",
 	help="base path to YOLO directory")
 ap.add_argument("-c", "--confidence", type=float, default=0.5,
 	help="minimum probability to filter weak detections")
