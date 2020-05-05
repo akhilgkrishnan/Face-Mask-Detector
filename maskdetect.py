@@ -6,11 +6,7 @@ import cv2
 import os
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
-<<<<<<< HEAD
 ap.add_argument("-y", "--yolo", required=True, default="./yolo",
-=======
-ap.add_argument("-y", "--yolo", required=True, default="yolo",
->>>>>>> cba2711dd8f97f2708c386dcbafdd8af65117a37
 	help="base path to YOLO directory")
 ap.add_argument("-c", "--confidence", type=float, default=0.5,
 	help="minimum probability to filter weak detections")
@@ -20,16 +16,6 @@ args = vars(ap.parse_args())
 
 labelsPath = os.path.sep.join([args["yolo"], "mask.names"])
 LABELS = open(labelsPath).read().strip().split("\n")
-
-weightsPath = os.path.sep.join([args["yolo"], "mask.weights"])
-configPath = os.path.sep.join([args["yolo"], "yolov4.cfg"])
-
-print("[INFO] loading YOLO from disk...")
-net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
-
-<<<<<<< HEAD
-labelsPath = os.path.sep.join([args["yolo"], "mask.names"])
-LABELS = open(labelsPath).read().strip().split("\n")
 COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),dtype="uint8")
 weightsPath = os.path.sep.join([args["yolo"], "yolov3.weights"])
 configPath = os.path.sep.join([args["yolo"], "yolov3.cfg"])
@@ -37,8 +23,6 @@ configPath = os.path.sep.join([args["yolo"], "yolov3.cfg"])
 print("[INFO] loading YOLO from disk...")
 net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
-=======
->>>>>>> cba2711dd8f97f2708c386dcbafdd8af65117a37
 vid = cv2.VideoCapture(0)
 
 while(True):
