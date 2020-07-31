@@ -13,10 +13,13 @@ This is a YOLO based deeplearning project for identifying wheather a person wear
 1. First clone this github repo:
 `git clone https://github.com/AkhilGKrishnan/Face-Mask-Detector.git facemaskdetect`
 
-2. Install dependencies 
+2. Move to project repo
+  `cd fasemaskdetect`
+  
+3. Install dependencies 
 `pip install -r requirements.txt`
 
-3. To run the application
+4. To run the application
 `python maskdetect.py`
 
 ## Project Status
